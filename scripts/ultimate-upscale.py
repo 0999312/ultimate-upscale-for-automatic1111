@@ -468,7 +468,7 @@ class Script(scripts.Script):
             seams_fix_denoise = gr.Slider(label='Denoise', minimum=0, maximum=1, step=0.01, value=0.35, visible=False, interactive=True)
             seams_fix_width = gr.Slider(label='Width', minimum=0, maximum=128, step=1, value=64, visible=False, interactive=True)
             seams_fix_mask_blur = gr.Slider(label='Mask blur', minimum=0, maximum=64, step=1, value=4, visible=False, interactive=True)
-            seams_fix_padding = gr.Slider(label='Padding', minimum=0, maximum=128, step=1, value=16, visible=False, interactive=True)
+            seams_fix_padding = gr.Slider(label='Padding', minimum=0, maximum=512, step=1, value=16, visible=False, interactive=True)
         gr.HTML("<p style=\"margin-bottom:0.75em\">Save options:</p>")
         with gr.Row():
             save_upscaled_image = gr.Checkbox(label="Upscaled", value=True)
